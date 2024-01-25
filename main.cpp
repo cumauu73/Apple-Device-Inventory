@@ -1,9 +1,16 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
-  float SerialNumber;
+  string SerialNumber;
   cout << "Enter the Serial Number: ";
   cin >> SerialNumber;
-  return 0;
+  if (SerialNumber =="abc") {
+    cout << "The serial number is not valid.";
+  }
+  else {
+    cout << "hi correct";
+  }
+   return 0;
 }

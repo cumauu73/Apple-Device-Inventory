@@ -5,10 +5,13 @@ using namespace std;
 
 int main() {
     string ModelNumber;
-    cout << "Please Enter the Model Number: ";
-    cin >> ModelNumber;
+    bool isValidModel = false;
 
-    if (ModelNumber == "A2436" || ModelNumber == "A2437" || ModelNumber == "A2764" || ModelNumber == "A2766") {
+    while (!isValidModel) {
+        cout << "Please Enter the Model Number: ";
+        cin >> ModelNumber;
+
+        if (ModelNumber == "A2436" || ModelNumber == "A2437" || ModelNumber == "A2764" || ModelNumber == "A2766") {
         cout << "iPad Pro 12.9-inch (6th generation)";
     } else if (ModelNumber == "A2759" || ModelNumber == "A2761" || ModelNumber == "A2435" || ModelNumber == "A2762") {
         cout << "iPad Pro 11-inch (4th generation)";
@@ -72,17 +75,12 @@ int main() {
         cout << "iPad (3rd generation)";
     } else if (ModelNumber == "A1395" || ModelNumber == "A1396" || ModelNumber == "A1397") {
         cout << "iPad 2";
-    } else if (ModelNumber == "A1219" || ModelNumber == "A1337
+    } else if (ModelNumber == "A1219" || ModelNumber == "A1337") {
+        cout << "iPad 1";
+    } else {
+      cout << "Please enter a alid Model Number..";
+    }
+    }
 
-  
-
-
-
-
-
-
-
-
-
-   return 0;
-} 
+    return 0;
+}
